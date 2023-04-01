@@ -1,9 +1,47 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
 .navbar-brand img {
     max-width: 50px;
     max-height: 50px;
+
   }
 
 
   .logo img {
     width: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+li {
+  display: flex;
+  align-self: center;
+}
+
+
+.background-image {
+  width: 50%;
+}
+
+.btn-lg {
+  margin-bottom: 1em;
+}
+
+.h1-left {
+  font-size: 4em;
+}
+.h1-right {
+  font-size: 3em;
+}
+.welcome-msg {
+font-size: 1.5em;
 }

@@ -10,52 +10,83 @@
     <title>Time Capsule</title>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <ul class="navbar-nav justify-content-around w-100">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-                <div class="text-center">
-                    <img class="backgroundimage w-50" src="./img/logo.png" alt="backgroundimage">
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Support</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-around container-fluid navbar-collapse">
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <img class="backgroundimage w-50" src="./img/logo.png" alt="backgroundimage">
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="support.html">Support</a>
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 
-<body>
-    <div class="text-center">
-        <img class="backgroundimage w-50" src="./img/backgroundimage.jpg" alt="backgroundimage">
-    </div>
 
- <div class="container">
+<body class="bg-light">
+<div class="d-flex justify-content-center">
+    <img class="background-image" src="./img/backgroundimage.jpg" alt="backgroundimage">
+</div>
+
+
+    <div class="container">
+ <div class="container-left col-sm-6">
     <div class="slogan2">
-        <h1>LET'S CAPTURE YOUR LEGACY FOR GENERATIONS TO COME!</h1>
+        <h1 class="h1-left">LET'S CAPTURE YOUR LEGACY FOR GENERATIONS TO COME!</h1>
     </div>
  </div>
 
- <div class="container">
-    <div class="slogan2">
-        <h1>Welcome to Time Capsule!</h1>
+ <div class="container-right col-7">
+    <div class="heading-right">
+        <h1 class="h1-right">Welcome to Time Capsule!</h1>
     </div>
-    <div class="welcome-msg">
-        <p>
+    <div class="welcome-container">
+        <p class="welcome-msg">
         We are a team of passoinate individuals who believe that preserving the past is just as important as shaping the future. 
         Our mission is to provide a platform where people from all walks of life can come together and contribut to creating a lasting legacy 
         that will be cherished by generations to come.
     </p>
 </div>
  </div>
-
+</div>
+<button type="button" class="btn btn-lg col-sm-4 offset-sm-4 btn-primary">Let's get started!</button>
 </body>
+
+<footer class="bg-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p> We are a team of passoinate individuals who believe that preserving the past is just as important as shaping the future. 
+            Our mission is to provide a platform where people from all walks of life can come together and contribut to creating a lasting legacy 
+            that will be cherished by generations to come.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h5>Center Column</h5>
+          <p>Content for the center column goes here.</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <h5>Right Column</h5>
+          <p>Content for the right column goes here.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
 </html>
