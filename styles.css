@@ -47,6 +47,7 @@ font-size: 1.5em;
 }
 
 /*filters*/
+
 .filters {
   float: left;
   width: 300px;
@@ -95,4 +96,17 @@ font-size: 1.5em;
 .filter-row {
   display: flex; 
   justify-content: space-between; 
+}
+
+/*cards*/
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  width: 18rem;
+  margin-left: 150px;
 }
