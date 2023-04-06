@@ -137,8 +137,9 @@ font-size: 1.5em;
 }
 
 .card {
-  width: 18rem;
+  width: 25%;
   margin-left: 150px;
+  background-color: white;
 }
 
 /*Capsule Creation Page*/
@@ -161,7 +162,7 @@ form {
 .btn-support {
 display: flex;
 flex: start;
-width: 15%;
+width: 20%;
 margin-top: 10px;
 border-radius: 5px;
 }
@@ -200,14 +201,6 @@ margin-left: 2.5em;
 
 
 
-
-
-
-
-
-
-
-
 /*footer*/
 
 .store-btns {
@@ -216,14 +209,25 @@ margin-left: 2.5em;
 
 
 
+
 @media (max-width: 767px) {
   .background-image {
     display: none;
   }
-}
-
-@media (max-width: 800px) {
   .page-break {
     display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .btn-support {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .card {
+    width: 100%;
   }
 }
