@@ -146,28 +146,26 @@ font-size: 1.5em;
   margin-bottom: 50px;
 }
 
-
-/*Support Page
-
-
-
+h1 {
+  margin-left: 1em;
+}
 
 
+/*Support Page*/
 
 
-
-
-DONT FORGET TO LINK SUPPORT PAGE TO ALL PAGES ONCE YOU FIX ERRORS*/
-
-.h1-support {
+.btn-support {
 display: flex;
 justify-content: center;
-align-items: center;
-margin-top: 250px;
+width: 15%;
+margin-top: 10px;
+
 }
+
 
 .support-container {
   margin-bottom: 250px;
+  max-width: 75%;
 }
 
 
