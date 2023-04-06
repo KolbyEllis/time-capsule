@@ -12,7 +12,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,8 +23,8 @@
                     <li class="nav-item col-sm-2">
                         <a class="nav-link" href="projects.html">Projects</a>
                     </li>
-                    <li class="nav-item col-sm-2">
-                        <img class="backgroundimage w-50" href="index.html" src="./img/logo.png" alt="backgroundimage">
+                    <li class="nav-item col-sm-2 d-none d-md-block">
+                        <img class="backgroundimage w-75" href="index.html" src="./img/logo.png" alt="backgroundimage" />
                     </li>
                     <li class="nav-item col-sm-2">
                         <a class="nav-link" href="#">Support</a>
@@ -37,61 +37,57 @@
         </div>
     </nav>
 </header>
-
-
-<body class="bg-light">
-<div class="d-flex justify-content-center">
-    <img class="background-image" src="./img/backgroundimage.jpg" alt="backgroundimage">
-</div>
-
-
+<body>
+    <div class="d-flex justify-content-center">
+        <img class="background-image" src="./img/backgroundimage.jpg" alt="backgroundimage" />
+    </div>
+    <img class="page-break" src="./img/page-break.png" alt="page-break"/>
     <div class="container">
- <div class="container-left col-sm-6">
-    <div class="slogan2">
-        <h1 class="h1-left">LET'S CAPTURE YOUR LEGACY FOR GENERATIONS TO COME!</h1>
-    </div>
- </div>
-
- <div class="container-right col-7">
-    <div class="heading-right">
-        <h1 class="h1-right">Welcome to Time Capsule!</h1>
-    </div>
-    <div class="welcome-container">
-        <p class="welcome-msg">
-        We are a team of passoinate individuals who believe that preserving the past is just as important as shaping the future. 
-        Our mission is to provide a platform where people from all walks of life can come together and contribut to creating a lasting legacy 
-        that will be cherished by generations to come.
-    </p>
-</div>
- </div>
-</div>
-<a href="create-capsule.html" class="btn btn-lg col-sm-4 offset-sm-4 btn-primary">Let's get started!</a>
-</body>
-
-<footer class="bg-white py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>About Us</h5>
-          <p> We are a team of passoinate individuals who believe that preserving the past is just as important as shaping the future. 
-            Our mission is to provide a platform where people from all walks of life can come together and contribut to creating a lasting legacy 
-            that will be cherished by generations to come.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="welcome-photo img-fluid" src="./img/welcome-photo.webp" alt="welcome-photo" />
+            </div>
+            <div class="col-md-6">
+                <div class="heading-right">
+                    <h1 class="h1-right">Welcome to Time Capsule!</h1>
+                </div>
+                <div class="welcome-container">
+                    <p class="welcome-msg">
+                        We are a team of passionate individuals who believe that preserving the past is just as important as shaping the future. Our mission is to provide a platform where people from all walks of life can come together and contribute to creating a lasting legacy that will be cherished by generations to come.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mx auto">
-          <h5>Helpful Links</h5>
-          <ul>
-            <li>Projects</li>
-            <li>Your Account</li>
-            <li>Public Forum</li>
-            <li>Help</li>
-            <li>Social Media Links</li>
-          </ul>
-        </div>
-        <div class="col-md-4 text-md-end">
-            <img class="store-btns" src="./img/app-buttons.png" alt="app store buttons">
-        </div>
-      </div>
     </div>
-  </footer>
+    <div class="d-flex justify-content-center col">
+        <h1 class="action-msg">Let's Capture Your Legacy For Generations To Come!</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="create-capsule.html" class="btn btn-lg btn-primary col-sm-3">Let's get started!</a>
+    </div>
+    <img class="page-break" src="./img/page-break.png" alt="page-break"/>
+    <footer class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are a team of passionate individuals who believe that preserving the past is just as important as shaping the future. Our mission is to provide a platform where people from all walks of life can come together and contribute to creating a lasting legacy that will be cherished by generations to come.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Helpful Links</h5>
+                    <ul>
+                        <li>Projects</li>
+                        <li>Your Account</li>
+                        <li>Public Forum</li>
+                        <li>Help</li>
+                        <li>Social Media Links</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <img class="store-btns img-fluid" src="./img/app-buttons.png" alt="app store buttons" role="button" />
+                </div>
+            </div>
+        </div>
+    </footer>
   
 </html>
