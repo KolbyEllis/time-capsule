@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <title>Time Capsule</title>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container-fluid">
-          <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav justify-content-around container-fluid navbar-collapse">
-                  <li class="nav-item col-sm-2">
-                      <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item col-sm-2">
-                      <a class="nav-link" href="projects.html">Projects</a>
-                  </li>
-                  <li class="nav-item col-sm-2 d-none d-md-block">
-                      <img class="backgroundimage w-75" role="button" href="index.html" src="./img/logo.png" alt="backgroundimage" />
-                  </li>
-                  <li class="nav-item col-sm-2">
-                      <a class="nav-link" href="#">Support</a>
-                  </li>
-                  <li class="nav-item col-sm-2">
-                      <a class="nav-link" href="#">Sign in</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-</header>
 
 <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav justify-content-around container-fluid navbar-collapse">
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item col-sm-2 d-none d-md-block">
+                        <img class="backgroundimage w-75" role="button" href="index.html" src="./img/logo.png" alt="backgroundimage" />
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="support.html">Support</a>
+                    </li>
+                    <li class="nav-item col-sm-2">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+
   <h1 class="ccp mt-3">Capsule Creation Page</h1>
   <div class="create-capsule-container container-md col-lg-6 offset-lg-3">
     <form>
       <div class="mb-3">
         <label for="title" class="form-label">Title</label>
-        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+        <input type="text" class="form-control" id="title" name="title" placeholder="Enter title"/>
       </div>
       <div class="mb-3">
         <label for="file" class="form-label">Add photos or videos</label>
-        <input type="file" class="form-control" id="file" name="file">
+        <input type="file" class="form-control" id="file" name="file"/>
       </div>
       <div class="mb-3">
         <label for="tags" class="form-label">Tags</label>
-        <input type="text" class="form-control" id="tags" name="tags" placeholder="Enter tags">
+        <input type="text" class="form-control" id="tags" name="tags" placeholder="Enter tags"/>
       </div>
       <div class="mb-3">
         <label for="comments" class="form-label">Comments</label>
@@ -60,30 +65,31 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+  
+  <footer class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>We are a team of passionate individuals who believe that preserving the past is just as important as shaping the future. Our mission is to provide a platform where people from all walks of life can come together and contribute to creating a lasting legacy that will be cherished by generations to come.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Helpful Links</h5>
+                <ul>
+                    <li>Projects</li>
+                    <li>Your Account</li>
+                    <li>Public Forum</li>
+                    <li>Help</li>
+                    <li>Social Media Links</li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <img class="store-btns img-fluid" src="./img/app-buttons.png" alt="app store buttons" role="button" />
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 
-<footer class="bg-light py-3">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-4">
-              <h5>About Us</h5>
-              <p>We are a team of passionate individuals who believe that preserving the past is just as important as shaping the future. Our mission is to provide a platform where people from all walks of life can come together and contribute to creating a lasting legacy that will be cherished by generations to come.</p>
-          </div>
-          <div class="col-md-4">
-              <h5>Helpful Links</h5>
-              <ul>
-                  <li>Projects</li>
-                  <li>Your Account</li>
-                  <li>Public Forum</li>
-                  <li>Help</li>
-                  <li>Social Media Links</li>
-              </ul>
-          </div>
-          <div class="col-md-4 text-md-end">
-              <img class="store-btns img-fluid" src="./img/app-buttons.png" alt="app store buttons" role="button" />
-          </div>
-      </div>
-  </div>
-</footer>
 </html>

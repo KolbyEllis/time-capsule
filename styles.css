@@ -76,13 +76,48 @@ height: auto;
 font-size: 1.5em;
 }
 
-/*filters*/
+/*projects page*/
+
+.filters {
+margin-top: 3em;
+margin-left: 2em;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.project-card {
+  width: 50%;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  background-color: white;
+  border: solid black 1px;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.card-img-top {
+  border-radius: 4px;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.row {
+padding-top: 3em;
+padding-bottom: 3em;
+}
 
 .filters {
   float: left;
   width: 300px;
   background-color: #f2f2f2;
   padding: 10px;
+
 }
 
 .filters h2 {
@@ -121,6 +156,7 @@ font-size: 1.5em;
   background-color: #ccc;
   color: #fff;
   text-decoration: none;
+  border: black 1px solid;
 }
 
 .filter-row {
@@ -128,23 +164,9 @@ font-size: 1.5em;
   justify-content: space-between; 
 }
 
-/*cards*/
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
-
-.card {
-  width: 25%;
-  margin-left: 150px;
-  background-color: white;
-}
-
 /*Capsule Creation Page*/
 .create-capsule-container {
-  margin-bottom: 50px;
+  margin-bottom: 250px;
 }
 
 h1 {
@@ -184,23 +206,6 @@ margin-left: 2.5em;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer*/
 
 .store-btns {
@@ -209,6 +214,7 @@ margin-left: 2.5em;
 
 
 
+/*media queries*/
 
 @media (max-width: 767px) {
   .background-image {
@@ -229,5 +235,50 @@ margin-left: 2.5em;
 @media (min-width: 300px) and (max-width: 500px) {
   .card {
     width: 100%;
+  }
+  header {
+    width: 100%;
+  }
+  .filters {
+    float: none;
+    width: auto;
+    margin: 0 auto;
+  }
+  .project-card {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2em;
+    width: fit-content;
+  }
+  .card-grid {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 1180px) {
+  header {
+    width: 100%;
+  }
+  .filters {
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+  .project-card-header,
+  .project-card-footer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-grid {
+    overflow-x: hidden;
   }
 }
